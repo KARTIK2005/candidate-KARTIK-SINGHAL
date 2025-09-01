@@ -1,0 +1,23 @@
+{
+  "guide_id": 67,
+  "steps": [
+    {
+      "index": 1,
+      "second": 5,
+      "title": "Frame 00:05",
+      "image_url": "http://localhost:4000/1.jpg"
+    },
+    {
+      "index": 2,
+      "second": 10,
+      "title": "Frame 00:10",
+      "image_url": "http://localhost:4000/2.jpg"
+    },
+    {
+      "index": 3,
+      "second": 15,
+      "title": "Frame 00:15",
+      "image_url": "http://localhost:4000/3.jpg"
+    }
+  ]
+}

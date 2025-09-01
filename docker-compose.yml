@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./api
+    container_name: stepwise_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - interface
+
+  interface:
+    build: ./interface
+    container_name: stepwise_interface
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env
+    volumes:
+      - ./interface:/app:cached
+      - /app/node_modules
+    networks:
+      default:
+        aliases:
+          - callback
+
+
+
