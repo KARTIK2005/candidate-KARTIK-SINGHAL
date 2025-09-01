@@ -26,8 +26,10 @@ The project is containerized using Docker Compose.
    curl http://localhost:4000/health
 
    - Expected response:
-      { "ok": true }
+      { "ok": true }<br>
+      <br>
       ![4000](screenshots/4000.png)
+     <br>
 
       ![8000](./screenshots/8000.png)
 
@@ -46,9 +48,9 @@ The project is containerized using Docker Compose.
      -H "Content-Type: application/json" \
      -d '{"video_url":"https://example.com/video.mp4","guide_id":67,"callback_url":"http://host.docker.internal:4000/callbacks/   steps"}'
 
-
+<br>
 ![received json file](screenshots/jsonfile.png)
-
+<br>
 4. Open guide in browser
    Visit:
      http://localhost:4000/guides/67
@@ -58,4 +60,5 @@ The project is containerized using Docker Compose.
 **Note**
    - Use docker compose down --volumes 
       to reset the services.#
+
 
