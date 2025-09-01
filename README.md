@@ -7,8 +7,8 @@ The project is containerized using Docker Compose.
 
 # **Setup**
    Prerequisites
-   - Docker Desktop installed
-   - Docker Compose available
+   - Docker Desktop installed<br>
+   - Docker Compose available<br>
  - Create a .env file at the root of the project: IMPORT_TOKEN=stepwize_test
 
 
@@ -16,8 +16,8 @@ The project is containerized using Docker Compose.
    docker compose up --build
 
    Services will start on:
-     - API: http://localhost:8000
-     - Interface: http://localhost:4000
+     - API: http://localhost:8000<br>
+     - Interface: http://localhost:4000<br>
      ![api working](screenshots/api.png)
 
  **Testing the Workflow**
@@ -31,7 +31,7 @@ The project is containerized using Docker Compose.
       ![4000](screenshots/4000.png)
      <br>
 
-      ![8000](./screenshots/8000.png)
+      ![8000](./screenshots/8000.png)<br>
 
 3. Trigger pipeline (file upload)
  Upload a local video:
@@ -55,10 +55,12 @@ The project is containerized using Docker Compose.
    Visit:
      http://localhost:4000/guides/67
    You should see 3 steps displayed with titles and images.
-      ![frontend](screenshots/output.png)
+   
+   ![frontend](screenshots/output.png)
 
 **Note**
    - Use docker compose down --volumes 
       to reset the services.#
+
 
 
