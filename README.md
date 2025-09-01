@@ -28,9 +28,10 @@ The project is containerized using Docker Compose.
    - Expected response:
       { "ok": true }
       ![4000](screenshots/4000.png)
+
       ![8000](./screenshots/8000.png)
 
-2. Trigger pipeline (file upload)
+3. Trigger pipeline (file upload)
  Upload a local video:
 
    curl -X POST http://localhost:8000/process-video \
@@ -57,3 +58,4 @@ The project is containerized using Docker Compose.
 **Note**
    - Use docker compose down --volumes 
       to reset the services.#
+
