@@ -15,15 +15,15 @@ The project is containerized using Docker Compose.
 # **Build and Start Services**
    docker compose up --build
 
-   Services will start on:
+   Services will start on:<br>
      - API: http://localhost:8000<br>
      - Interface: http://localhost:4000<br>
      ![api working](screenshots/api.png)
 
  **Testing the Workflow**
-1. Check health endpoints
-   curl http://localhost:8000/health
-   curl http://localhost:4000/health
+1. Check health endpoints<br>
+   curl http://localhost:8000/health<br>
+   curl http://localhost:4000/health<br>
 
    - Expected response:
       { "ok": true }<br>
@@ -46,21 +46,21 @@ The project is containerized using Docker Compose.
    curl -X POST http://localhost:8000/process-video \
      -H "Authorization: Bearer stepwize_test" \
      -H "Content-Type: application/json" \
-     -d '{"video_url":"https://example.com/video.mp4","guide_id":67,"callback_url":"http://host.docker.internal:4000/callbacks/   steps"}'
+     -d '{"video_url":"https://example.com/video.mp4","guide_id":67,"callback_url":"http://host.docker.internal:4000/callbacks/   steps"}'<br>
 
-<br>
-![received json file](screenshots/jsonfile.png)
-<br>
+  ![received json file](screenshots/jsonfile.png)
+
 4. Open guide in browser
-   Visit:
-     http://localhost:4000/guides/67
+   Visit:<br>
+     http://localhost:4000/guides/67<br>
    You should see 3 steps displayed with titles and images.
    
    ![frontend](screenshots/output.png)
 
 **Note**
-   - Use docker compose down --volumes 
+   - Use docker compose down --volumes <br>
       to reset the services.#
+
 
 
 
